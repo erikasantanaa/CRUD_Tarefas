@@ -47,7 +47,6 @@ module.exports = {
                 dataEntrega
             };
         }else{
-            //ele precisa receber os dois campos par afazer o lançamento.
             json.error = 'Campos não enviados';
         };
         
