@@ -11,7 +11,7 @@ module.exports = {
 
         for(let i in tarefas){
             json.result.push({
-                condigo: tarefas[i].condigo,
+                codigo: tarefas[i].codigo,
                 descricao: tarefas[i].tituloTarefa,
                 dataEntrega: tarefas[i].dataEntrega
             })
@@ -47,6 +47,7 @@ module.exports = {
                 dataEntrega
             };
         }else{
+            //ele precisa receber os dois campos par afazer o lançamento.
             json.error = 'Campos não enviados';
         };
         

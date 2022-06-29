@@ -33,14 +33,14 @@ module.exports = {
     inserir: (tituloTarefa, dataEntrega) => {
         return new Promise((aceito, rejeitado) => {
 
-            db.query('INSERT INTO tarefas (tituloTarefa, dataEntrega) VALUES (?,? )',
+            db.query('INSERT INTO tarefas (tituloTarefa, dataEntrega) VALUES (?, ?)',
                 [tituloTarefa, dataEntrega],
                 (error, results) => {
                     if(error) { rejeitado(error); return;}
                     aceito(results.insertCodigo);
                 }
-            );
-        });
+            )
+        })
     },
 
     alterar: (codigo, tituloTarefa, dataEntrega) => {
