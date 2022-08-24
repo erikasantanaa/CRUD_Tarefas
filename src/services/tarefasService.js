@@ -1,8 +1,5 @@
-/**Responsável pelo banco de dados */
-
 const db = require('../db')
 
-/**Requisições*/
 module.exports = {
     buscarTodos: () => {
         return new Promise((aceito, rejeitado) => {

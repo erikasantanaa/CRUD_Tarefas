@@ -1,8 +1,5 @@
-/**Responsável API*/
 const tarefasService = require('../services/tarefasService')
 
-/*O json busca os dados p/ pagina web.
-Função buscarTodos*/
 module.exports = {
     buscarTodos: async (req, res) => {
         let json = {error:'', result: []}
